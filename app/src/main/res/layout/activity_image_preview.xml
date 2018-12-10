@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_theme_color"
+        android:alpha="0.3">
+</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:textSize="@dimen/text_size_22"
+        android:textColor="@color/colorBlack"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_full_image"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:layout_width="@dimen/dimen_65"
+        android:layout_height="@dimen/dimen_65"
+        android:id="@+id/iv_cross"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:src="@drawable/ic_button_with_cross"/>
+</RelativeLayout>

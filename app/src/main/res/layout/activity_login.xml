@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/iv_logo"
+    android:src="@drawable/ic_logo"
+    android:layout_marginTop="@dimen/dimen_48"
+    android:layout_centerHorizontal="true"/>
+
+    <com.warrous.contactpointlatest.framework.TextInputLayoutWrapper
+        android:id="@+id/til_email"
+        style="@style/til_edit"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginTop="@dimen/dimen_20">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name"
+            android:imeOptions="actionNext"
+            android:drawablePadding="@dimen/dimen_8"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_contact"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_18" />
+    </com.warrous.contactpointlatest.framework.TextInputLayoutWrapper>
+
+    <com.warrous.contactpointlatest.framework.TextInputLayoutWrapper
+        android:id="@+id/til_password"
+        style="@style/til_edit"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_below="@+id/til_email"
+        android:layout_marginTop="@dimen/dimen_20">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:drawablePadding="@dimen/dimen_8"
+            android:drawableLeft="@drawable/ic_password"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_18" />
+    </com.warrous.contactpointlatest.framework.TextInputLayoutWrapper>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rb_remember_me"
+        android:layout_below="@+id/til_password"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:textColor="@color/colorGrey"
+        android:text="@string/remember_me"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_forgot_password"
+        android:layout_below="@+id/til_password"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="@string/forgot_password"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle"
+        android:id="@+id/btn_login"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/rb_remember_me"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_15"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_google"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_34"
+        android:background="@drawable/ic_google_login"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_linked_in"
+        android:layout_below="@+id/btn_google"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@drawable/ic_linked_in_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_need_cpm"
+        android:text="@string/need_cpm_text"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorGrey"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:layout_marginLeft="@dimen/dimen_65" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_13"
+        android:id="@+id/tv_create_account"
+        android:text="@string/create_account"
+        android:layout_toRightOf="@+id/tv_need_cpm"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/app_theme_color"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginBottom="@dimen/dimen_15"/>
+    <View
+        android:id="@+id/view_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGrey"
+        android:layout_above="@+id/tv_create_account"
+        android:layout_marginBottom="@dimen/dimen_15"/>
+
+
+</RelativeLayout>

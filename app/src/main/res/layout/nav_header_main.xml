@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_container"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@color/app_theme_color"
+    android:padding="@dimen/dimen_15"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/img_header_bg"
+        android:layout_width="239dp"
+        android:layout_height="57dp"
+        android:src="@drawable/ic_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_24"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/tv_name"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/img_header_bg"
+        android:textSize="@dimen/text_size_24"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_8"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/tv_role"
+        android:layout_below="@id/tv_name"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5"/>
+
+</RelativeLayout>

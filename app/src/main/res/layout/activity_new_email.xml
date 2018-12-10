@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/app_theme_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:gravity="center_horizontal"
+                    android:text="@string/account_preferences"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_20" />
+
+                <ImageView
+                    android:id="@+id/iv_check"
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:src="@drawable/ic_check_white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.75"
+            android:background="@color/colorLightGrey">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_15">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:id="@+id/tv_email_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_marginRight="@dimen/dimen_8"
+                        android:includeFontPadding="false"
+                        android:paddingTop="@dimen/sup_padding"
+                        android:text="@string/email_type"
+                        android:textColor="@color/colorSettingsTextColor"
+                        android:textSize="@dimen/text_size_14" />
+
+
+                    <Spinner
+                        android:id="@+id/email_type_spinner"
+                        style="@style/AppTheme.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_email_type"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_8" />
+
+                    <TextView
+                        android:id="@+id/tv_from_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/email_type_spinner"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_marginRight="@dimen/dimen_8"
+                        android:includeFontPadding="false"
+                        android:paddingTop="@dimen/dimen_8"
+                        android:text="@string/from_email"
+                        android:textColor="@color/colorSettingsTextColor"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <Spinner
+                        android:id="@+id/from_email_spinner"
+                        style="@style/AppTheme.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_from_email"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:layout_marginRight="@dimen/dimen_8" />
+                    <!--</android.support.design.widget.TextInputLayout>-->
+
+
+                    <com.warrous.contactpointlatest.framework.TextInputLayoutWrapper
+                        android:id="@+id/til_from_name"
+                        style="@style/til_edit"
+                        android:layout_below="@id/from_email_spinner"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_8">
+
+                        <EditText
+                            android:id="@+id/et_from_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/from_name"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapSentences"
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="normal" />
+                    </com.warrous.contactpointlatest.framework.TextInputLayoutWrapper>
+
+                    <com.warrous.contactpointlatest.framework.TextInputLayoutWrapper
+                        android:id="@+id/til_email_subject"
+                        style="@style/til_edit"
+                        android:layout_below="@id/til_from_name"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_8">
+
+                        <EditText
+                            android:id="@+id/et_email_subject"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email_subject"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapSentences"
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="normal" />
+                    </com.warrous.contactpointlatest.framework.TextInputLayoutWrapper>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_select_template"
+                        android:text="@string/select_template"
+                        android:layout_below="@+id/til_email_subject"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_8"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_templates"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/tv_select_template"
+                        android:orientation="horizontal"
+                        android:scrollbars="horizontal"
+                        android:visibility="visible"
+                        android:layout_marginBottom="@dimen/dimen_20"/>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

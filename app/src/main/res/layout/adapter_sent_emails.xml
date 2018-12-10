@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle_adapter"
+        android:padding="@dimen/dimen_10">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_campaign_name"
+        android:text="Campaign Name"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:textColor="@color/colorSentEmails"
+        android:textSize="@dimen/text_size_16"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_campaign_name"
+        android:layout_marginTop="@dimen/dimen_3"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_12"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sent"
+            android:textColor="@color/colorSentEmailsItem"
+            android:paddingRight="@dimen/dimen_8"
+            android:textSize="@dimen/text_size_13"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yesterday,"
+            android:textColor="@color/colorSentEmailsItem"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_8"
+            android:textSize="@dimen/text_size_13"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2:11 PM"
+            android:textColor="@color/colorSentEmailsItem"
+            android:paddingRight="@dimen/dimen_8"
+            android:textSize="@dimen/text_size_13"/>
+    </LinearLayout>
+
+<ImageView
+    android:layout_width="@dimen/dimen_12"
+    android:layout_height="@dimen/dimen_30"
+    android:id="@+id/iv_menu"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="@dimen/dimen_8"
+    android:layout_marginBottom="@dimen/dimen_8"
+    android:visibility="gone"
+    android:src="@drawable/ic_menu_dots"/>
+    <View
+        android:id="@+id/view_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLightGrey"
+        android:layout_below="@+id/iv_menu"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_15"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="vertical"
+            android:background="@color/app_theme_color">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:id="@+id/iv_back"
+                    android:src="@drawable/ic_arrow_back"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:layout_marginLeft="@dimen/dimen_15" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_preferences"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_20"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"/>
+                <ImageView
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:src="@drawable/ic_check_white"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:layout_marginRight="@dimen/dimen_15" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.75">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_15">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_10"
+                android:background="@color/colorWhite">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_gallery"
+                    android:src="@drawable/ic_gallery"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name of Person"
+                    android:id="@+id/tv_name"
+                    android:layout_below="@id/iv_gallery"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/colorBlack"/>
+
+                <com.warrous.contactpointlatest.framework.TextInputLayoutWrapper
+                    android:id="@+id/til_fname"
+                    style="@style/til_edit"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginTop="@dimen/dimen_20">
+
+                    <EditText
+                        android:id="@+id/et_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/first_name"
+                        android:imeOptions="actionNext"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_18" />
+                </com.warrous.contactpointlatest.framework.TextInputLayoutWrapper>
+                <com.warrous.contactpointlatest.framework.TextInputLayoutWrapper
+                    android:id="@+id/til_lname"
+                    style="@style/til_edit"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_below="@+id/til_fname"
+                    android:layout_marginTop="@dimen/dimen_20">
+
+                    <EditText
+                        android:id="@+id/et_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/last_name"
+                        android:imeOptions="actionNext"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_18" />
+                </com.warrous.contactpointlatest.framework.TextInputLayoutWrapper>
+
+                <com.warrous.contactpointlatest.framework.TextInputLayoutWrapper
+                    android:id="@+id/til_email_address"
+                    style="@style/til_edit"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_below="@+id/til_lname"
+                    android:layout_marginTop="@dimen/dimen_20">
+
+                    <EditText
+                        android:id="@+id/et_email_adress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_18" />
+                </com.warrous.contactpointlatest.framework.TextInputLayoutWrapper>
+
+                <com.warrous.contactpointlatest.framework.TextInputLayoutWrapper
+                    android:id="@+id/til_password"
+                    style="@style/til_edit"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_below="@+id/til_email_address"
+                    android:layout_marginTop="@dimen/dimen_20">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_18" />
+                </com.warrous.contactpointlatest.framework.TextInputLayoutWrapper>
+                <com.warrous.contactpointlatest.framework.TextInputLayoutWrapper
+                    android:id="@+id/til_confirm_password"
+                    style="@style/til_edit"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_below="@+id/til_password"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:layout_marginBottom="@dimen/dimen_30">
+
+                    <EditText
+                        android:id="@+id/et_confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/confirm_password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_18" />
+                </com.warrous.contactpointlatest.framework.TextInputLayoutWrapper>
+
+            </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

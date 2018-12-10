@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "969270528413",
+    "firebase_url": "https://constantpointmarketing-android.firebaseio.com",
+    "project_id": "constantpointmarketing-android",
+    "storage_bucket": "constantpointmarketing-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969270528413:android:c78ef2cddb82e26d",
+        "android_client_info": {
+          "package_name": "com.warrous.contactpointlatest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969270528413-rt567uepd4qunm8a1rg2thlsmejk3fv0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.warrous.contactpointlatest",
+            "certificate_hash": "723268d0b276e574a53bab46be003c9b9320519e"
+          }
+        },
+        {
+          "client_id": "969270528413-f6srkdo1g22dbn6ena7d96eqbnlfdnim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_0YCA1XigXg7gjlrtb2ECWN_1IuzuHrY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969270528413-f6srkdo1g22dbn6ena7d96eqbnlfdnim.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

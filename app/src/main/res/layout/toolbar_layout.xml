@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_theme_color"
+    android:minHeight="?android:attr/actionBarSize"
+    app:theme="@style/ThemeOverlay.AppCompat"
+    app:titleTextColor="@color/colorWhite">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24"
+            android:layout_centerVertical="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/ic_arrow_back"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_toRightOf="@id/iv_back"
+            android:textColor="@android:color/white"
+            android:text="@string/emails"
+            android:textSize="@dimen/text_size_20" />
+
+        <ImageView
+            android:id="@+id/iv_add_user"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/dimen_10"
+            android:src="@drawable/ic_add"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="@dimen/dimen_48"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_toLeftOf="@id/iv_add_user"
+            android:padding="@dimen/dimen_16"
+            android:src="@drawable/ic_filter"
+            android:tint="@color/colorWhite"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

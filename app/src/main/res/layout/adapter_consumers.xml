@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle_adapter"
+        android:padding="@dimen/dimen_12">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_consumer"
+            android:text="General Intrest"
+            android:textSize="@dimen/text_size_22"
+            android:layout_marginLeft="@dimen/dimen_15"/>
+        <TextView
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_30"
+            android:id="@+id/btn_consumer_number"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:layout_toLeftOf="@+id/imgClick"
+            android:background="@drawable/ic_rec_grey"
+            android:text="7"/>
+        <ImageView
+            android:id="@+id/imgClick"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu_dots"
+            android:layout_marginTop="@dimen/dimen_3"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24" />
+    </RelativeLayout>
+
+
+</LinearLayout>

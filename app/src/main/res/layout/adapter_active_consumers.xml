@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle_adapter"
+        android:padding="@dimen/dimen_10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:text="Name"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_email"
+            android:text="warrous@gmail.com"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:paddingBottom="@dimen/dimen_8"
+            android:layout_below="@+id/tv_name"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/colorSettingsTextColor"/>
+        <ImageView
+            android:id="@+id/imgClick"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu_dots"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_width="@dimen/dimen_24"
+            android:layout_height="@dimen/dimen_24" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

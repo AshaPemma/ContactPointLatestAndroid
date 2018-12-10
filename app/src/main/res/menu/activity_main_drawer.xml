@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/nav_emails"
+            android:icon="@drawable/ic_email"
+            android:title="@string/emails" />
+        <!--<item-->
+        <!--android:id="@+id/nav_warranty"-->
+        <!--android:icon="@drawable/ic_warrenty"-->
+        <!--android:title="@string/nav_warranty" />-->
+        <item
+            android:id="@+id/nav_consumers"
+            android:icon="@drawable/ic_conusmers"
+            android:title="@string/consumers" />
+
+
+
+
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/ic_library"
+            android:title="@string/Library" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/account_settings" />
+
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/ic_light_bulb"
+        android:title="@string/help" />
+
+
+        <!--<item-->
+        <!--android:id="@+id/nav_about_us"-->
+        <!--android:icon="@drawable/ic_about_us"-->
+        <!--android:title="@string/nav_about" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_settings"-->
+        <!--android:icon="@drawable/ic_settings"-->
+        <!--android:title="@string/nav_settings" />-->
+
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+
+
+</menu>
